@@ -847,13 +847,15 @@ em{font-style:italic}
   .navsix a:hover{color:#fff;border-color:rgba(246,240,228,.22)}
   .navsix a[aria-current="page"]{color:var(--night);background:var(--amber);border-color:var(--amber)}
   </style>
-<style>.layerfig{margin:1.75rem 0 1.5rem}.layerfig svg{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(16,13,11,.18)}.layerfig figcaption{margin-top:.8rem;font-size:.8125rem;line-height:1.65;color:#6b625a}.flow h3{font-family:var(--head);font-weight:700;font-size:1.05rem;margin:1.6rem 0 .6rem}
+<style>.layerfig{margin:1.75rem 0 1.5rem;position:relative}
+.layerfig .lg-overlay{position:absolute;left:0;top:0;width:100%;height:auto;pointer-events:none;box-shadow:none;border-radius:0;overflow:visible}.layerfig svg{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(16,13,11,.18)}.layerfig figcaption{margin-top:.8rem;font-size:.8125rem;line-height:1.65;color:#6b625a}.flow h3{font-family:var(--head);font-weight:700;font-size:1.05rem;margin:1.6rem 0 .6rem}
 /* --- enhancements 14 Sep: depth, sheen, hover lift (tokens only) --- */
 @media (hover:hover) and (prefers-reduced-motion:no-preference){
   .steps li,.compare .col,.statline,.confidence,.imgslot,.layerfig svg{transition:transform .35s cubic-bezier(.2,.7,.25,1),box-shadow .35s ease}
   .steps li:hover,.compare .col:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(16,13,11,.14),0 2px 6px rgba(16,13,11,.06)}
   .statline:hover{transform:translateY(-2px)}
-  .layerfig svg:hover{transform:translateY(-3px);box-shadow:0 22px 50px rgba(16,13,11,.28)}
+  .layerfig:hover svg{transform:translateY(-3px)}
+  .layerfig:hover svg:not(.lg-overlay){box-shadow:0 22px 50px rgba(16,13,11,.28)}
   .tbl tbody tr{transition:background .25s ease}
   .tbl tbody tr:hover{background:rgba(242,106,27,.06)}
   .confidence:hover{box-shadow:0 10px 30px rgba(0,0,0,.35)}
@@ -1721,6 +1723,9 @@ p.querySelector('.tfpop-x').addEventListener('click',go);var t=setTimeout(go,130
     <path id="d5" class="lg-chan" d="M726.0 390.0 L672.0 390.0"/>
     <path id="d6" class="lg-chan" d="M709.3 452.7 L662.5 425.8"/>
   </g>
+  <text x="48" y="716" class="lg-tag">SERVICES KEEP THEIR OWN ROUTES TO THE PERSON · SERVICES DO NOT CONNECT TO EACH OTHER · NO CLINICAL RECORD ACCESS</text><text x="48" y="738" class="lg-tag">ILLUSTRATIVE · THE SERVICES IN MY OWN JOURNEY · NONE APPROACHED, NONE ONBOARDED · SEE THE FOOT OF THE PAGE</text>
+</svg>
+<svg class="lg-overlay" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
   <g id="lgGlow2" class="lg-mv">
     <circle cx="471" cy="316" r="11" fill="none" stroke="#f6f0e4" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;.95;.95;0;0" keyTimes="0;.05;.12;.3;1" dur="7.0s" begin="0.17s" repeatCount="indefinite"/><animate attributeName="r" values="11;16;16;16;16" keyTimes="0;.05;.12;.3;1" dur="7.0s" begin="0.17s" repeatCount="indefinite"/></circle>
     <circle cx="471" cy="316" r="11" fill="#f26a1b"><animate attributeName="fill" values="#f26a1b;#f6f0e4;#f6f0e4;#f26a1b;#f26a1b" keyTimes="0;.05;.12;.3;1" dur="7.0s" begin="0.17s" repeatCount="indefinite"/></circle>
@@ -1745,7 +1750,6 @@ p.querySelector('.tfpop-x').addEventListener('click',go);var t=setTimeout(go,130
     <circle r="5" class="lg-dot" stroke="#100d0b" stroke-width="1.2"><animateMotion dur="14.0s" begin="11.60s" repeatCount="indefinite"><mpath href="#thread"/></animateMotion></circle>
     <circle r="5" class="lg-dot" stroke="#100d0b" stroke-width="1.2"><animateMotion dur="14.0s" begin="13.94s" repeatCount="indefinite"><mpath href="#thread"/></animateMotion></circle>
   </g>
-  <text x="48" y="716" class="lg-tag">SERVICES KEEP THEIR OWN ROUTES TO THE PERSON · SERVICES DO NOT CONNECT TO EACH OTHER · NO CLINICAL RECORD ACCESS</text><text x="48" y="738" class="lg-tag">ILLUSTRATIVE · THE SERVICES IN MY OWN JOURNEY · NONE APPROACHED, NONE ONBOARDED · SEE THE FOOT OF THE PAGE</text>
 </svg>
 <figcaption>The six services around one person &mdash; the ones in my own journey, and the ones I would like to see take part &mdash; each through its own login to its own Partner Node on one shared Layer. Every service sees its own agreed view of the one thread. The person is the space in the middle.</figcaption>
 </figure>
