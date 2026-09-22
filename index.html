@@ -1662,6 +1662,10 @@ p.querySelector('.tfpop-x').addEventListener('click',go);var t=setTimeout(go,130
       .lg-svc{font:700 16px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.06em;fill:#a83f04}
       .lg-login{font:700 10.5px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.18em;fill:#f26a1b}
       .lg-svc2{font:500 12px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.03em;fill:#6b625a}
+      .lg-call rect{fill:rgba(255,181,46,.14);stroke:#ffb52e;stroke-width:1.5}
+      .lg-call text{font:700 12px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.14em;fill:#ffb52e}
+      .lg-call path{fill:none;stroke:#ffb52e;stroke-width:1.5;stroke-dasharray:4 3;opacity:.9}
+      .lg-call circle{fill:#ffb52e;stroke:#100d0b;stroke-width:1.5}
       @media (prefers-reduced-motion:reduce){.lg-dot,.lg-dotd,.lg-mv{display:none}}
     </style>
   </defs>
@@ -1713,6 +1717,14 @@ p.querySelector('.tfpop-x').addEventListener('click',go);var t=setTimeout(go,130
     <circle cx="729" cy="464" r="11" class="lg-node"/><circle cx="729" cy="464" r="17" class="lg-node2"/>
   </g>
   <text x="600" y="196" text-anchor="middle" class="lg-tag">PARTNER NODES · EACH SERVICE'S OWN DOOR</text>
+  <!-- callouts (static, in the base layer) -->
+  <g id="lgCallouts">
+    <g class="lg-call"><rect x="10" y="490" width="290" height="30" rx="15"/><text x="155" y="509.5" text-anchor="middle">YOUR LOGIN &middot; YOUR OWN DOOR</text><path d="M155 490 L145 404"/><circle cx="145" cy="404" r="4"/></g>
+    <g class="lg-call"><rect x="50" y="265" width="250" height="30" rx="15"/><text x="175" y="284.5" text-anchor="middle">CRS SUBMITS TO THE LAYER</text><path d="M300 280 L362 381"/><circle cx="362" cy="381" r="4"/></g>
+    <g class="lg-call"><rect x="865" y="490" width="270" height="30" rx="15"/><text x="1000" y="509.5" text-anchor="middle">THE LAYER DOES THE LAST LEG</text><path d="M865 505 L712 397"/><circle cx="712" cy="397" r="4"/></g>
+    <g class="lg-call"><rect x="445" y="625" width="310" height="30" rx="15"/><text x="600" y="644.5" text-anchor="middle">ONE THREAD &middot; EVERY NODE SEES IT</text><path d="M600 625 L600 548"/><circle cx="600" cy="548" r="4"/></g>
+    <g class="lg-call"><rect x="805" y="235" width="350" height="30" rx="15"/><text x="980" y="254.5" text-anchor="middle">NODES ARE NOT WIRED TO EACH OTHER</text><path d="M805 250 L760 352"/><circle cx="760" cy="352" r="4"/></g>
+  </g>
 
   <!-- six delivery channels: each Partner Node also delivers to the person -->
   <g id="lgDeliver">
@@ -1753,6 +1765,8 @@ p.querySelector('.tfpop-x').addEventListener('click',go);var t=setTimeout(go,130
 </svg>
 <figcaption>The six services around one person &mdash; the ones in my own journey, and the ones I would like to see take part &mdash; each through its own login to its own Partner Node on one shared Layer. Every service sees its own agreed view of the one thread. The person is the space in the middle.</figcaption>
 </figure>
+<script>(function(){function fit(){document.querySelectorAll('.layerfig').forEach(function(f){f.style.left='0px';f.style.width='';var w=Math.min(window.innerWidth-32,1240);var r=f.getBoundingClientRect();if(w<=r.width+1)return;f.style.width=w+'px';var r2=f.getBoundingClientRect();f.style.left=((window.innerWidth-w)/2-r2.left)+'px';});}
+if(document.readyState!=='loading')fit();else document.addEventListener('DOMContentLoaded',fit);window.addEventListener('load',fit);window.addEventListener('resize',fit);})();</script>
       <ul class="blist">
         <li><strong>Every morning is a data point.</strong> A reply says someone is still there. Even a delivery receipt &mdash; the phone is on &mdash; is information you did not have yesterday.</li>
       </ul>
