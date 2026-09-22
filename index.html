@@ -1766,7 +1766,7 @@ p.querySelector('.tfpop-x').addEventListener('click',go);var t=setTimeout(go,130
 </svg>
 <figcaption>The six services around one person &mdash; the ones in my own journey, and the ones I would like to see take part &mdash; each through its own login to its own Partner Node on one shared Layer. Every service sees its own agreed view of the one thread. The person is the space in the middle.</figcaption>
 </figure>
-<script>(function(){function fit(){document.querySelectorAll('.layerfig').forEach(function(f){f.style.left='0px';f.style.width='';var w=Math.min(window.innerWidth-108,1164);var r=f.getBoundingClientRect();if(w<=r.width+1)return;f.style.width=w+'px';var r2=f.getBoundingClientRect();f.style.left=((window.innerWidth-w)/2-r2.left)+'px';});}
+<script>(function(){function fit(){document.querySelectorAll('.layerfig').forEach(function(f){f.style.left='0px';f.style.width='';var w=Math.min(window.innerWidth-108,1164);var sec=f.closest('section'),h=sec&&sec.querySelector('h2');if(h){var x=0,e=h;while(e){x+=e.offsetLeft;e=e.offsetParent;}if(x>0&&x<(window.innerWidth-w)/2)w=window.innerWidth-2*x;}var r=f.getBoundingClientRect();if(w<=r.width+1)return;f.style.width=w+'px';var r2=f.getBoundingClientRect();f.style.left=((window.innerWidth-w)/2-r2.left)+'px';});}
 if(document.readyState!=='loading')fit();else document.addEventListener('DOMContentLoaded',fit);window.addEventListener('load',fit);window.addEventListener('resize',fit);})();</script>
       <ul class="blist">
         <li><strong>Every morning is a data point.</strong> A reply says someone is still there. Even a delivery receipt &mdash; the phone is on &mdash; is information you did not have yesterday.</li>
