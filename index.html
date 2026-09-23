@@ -1085,10 +1085,11 @@ p.querySelector('.tfpop-x').addEventListener('click',go);var t=setTimeout(go,130
         <li><b>You keep a receipted thread</b> for every person on it: what was sent, what was answered, what was handed on and whether it landed. Something you can point to in a review, or in front of a commissioner.</li>
       </ul>
       <p>OTOS carries the technical layer; consent, governance and operating rules are agreed with participating partners. <strong>OTOS Continuity is purely infrastructure, simply strengthening connection and communication for a cohort that I believe is crying out for it. The people, the words and the decisions stay yours.</strong></p>
-      <figure class="layerfig" aria-label="The Continuity Layer: six services, each with its own login and Partner Node on one shared Layer around the person; traffic moves both ways between each service and the person, through the Layer">
-<svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg" role="img">
-  <defs>
-    <symbol id="lgBrain" viewBox="0 0 739 557"><g transform="translate(0,557) scale(0.025,-0.025)" fill="#f26a1b" stroke="none">
+      <figure class="layerfig" aria-label="The Continuity Layer, animated: one service submits a communication through its own Continuity Login; the event is logged on its Partner Node, the thread updates and becomes visible to all partners; the layer delivers messages to the person and logs their responses. Five other services shown faded.">
+<svg viewBox="376 -23 1108 888" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="ly-lgT">
+<title id="ly-lgT">The Continuity Layer</title>
+<defs><marker id="ly-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#100d0b"/></marker><symbol id="ly-smsBubble" viewBox="0 0 24 18"><path d="M2 1 h20 a1.6 1.6 0 0 1 1.6 1.6 v9.6 a1.6 1.6 0 0 1 -1.6 1.6 h-11.6 l-5 3.6 v-3.6 h-3.4 a1.6 1.6 0 0 1 -1.6 -1.6 v-9.6 a1.6 1.6 0 0 1 1.6 -1.6 z" fill="#f6f0e4" stroke="#100d0b" stroke-width="1.6" stroke-linejoin="round"/><circle cx="8" cy="7.4" r="1.25" fill="#100d0b"/><circle cx="12" cy="7.4" r="1.25" fill="#100d0b"/><circle cx="16" cy="7.4" r="1.25" fill="#100d0b"/></symbol>
+<symbol id="ly-lgBrain" viewBox="0 0 739 557"><g transform="translate(0,557) scale(0.025,-0.025)" fill="#f26a1b" stroke="none">
 <path d="M13620 21433 c-14 -2 -55 -10 -92 -18 -37 -8 -118 -15 -180 -15 -74
 0 -133 -6 -168 -16 -30 -9 -109 -19 -175 -23 -75 -5 -134 -14 -157 -24 -22
 -10 -63 -17 -98 -17 -33 0 -77 -7 -98 -16 -20 -8 -68 -18 -107 -20 -38 -3 -91
@@ -1640,131 +1641,210 @@ p.querySelector('.tfpop-x').addEventListener('click',go);var t=setTimeout(go,130
 -99 20 -36 14 -75 20 -133 20 -48 0 -115 9 -162 20 -54 13 -114 20 -186 20
 -67 0 -141 7 -200 20 -87 18 -131 20 -579 18 -267 0 -496 -3 -510 -5z"/>
 </g></symbol>
-    <linearGradient id="lgBand" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffb52e"/><stop offset=".55" stop-color="#f26a1b"/><stop offset="1" stop-color="#a83f04"/>
-    </linearGradient>
-    <radialGradient id="lgGlow" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="#f26a1b" stop-opacity=".28"/><stop offset="1" stop-color="#f26a1b" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="lgGrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#f6f0e4" stroke-opacity=".045"/></pattern>
-    <style>
-      .lg-block{fill:#f6f0e4;stroke:#f26a1b;stroke-width:4}
-      .lg-pipe{fill:none;stroke:#f26a1b;stroke-width:7;stroke-linecap:round}
-      .lg-node{fill:#f26a1b;stroke:#100d0b;stroke-width:4}
-      .lg-node2{fill:none;stroke:#100d0b;stroke-width:2;opacity:.8}
-      .lg-dot{fill:#f6f0e4}
-      .lg-chan{fill:none;stroke:#f26a1b;stroke-width:5;stroke-linecap:round;opacity:.92}
-      .lg-dotd{fill:#a83f04}
-      .lg-kick{font:600 12px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.2em;fill:#ffb52e}
-      .lg-lab{font:700 13px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.14em;fill:#100d0b}
-      .lg-sub{font:400 11px 'Libre Franklin',system-ui,sans-serif;fill:#6b625a}
-      .lg-tag{font:600 10.5px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.16em;fill:#f6f0e4;opacity:.7}
-      .lg-svc{font:700 16px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.06em;fill:#a83f04}
-      .lg-login{font:700 10.5px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.18em;fill:#f26a1b}
-      .lg-svc2{font:500 12px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.03em;fill:#6b625a}
-      .lg-call rect{fill:rgba(255,181,46,.14);stroke:#ffb52e;stroke-width:1.5}
-      .lg-call text{font:700 12px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.14em;fill:#ffb52e}
-      .lg-call path{fill:none;stroke:#ffb52e;stroke-width:1.5;stroke-dasharray:4 3;opacity:.9}
-      .lg-call circle{fill:#ffb52e;stroke:#100d0b;stroke-width:1.5}
-      @media (prefers-reduced-motion:reduce){.lg-dot,.lg-dotd,.lg-mv{display:none}}
-    </style>
-  </defs>
-  <rect width="1200" height="760" rx="18" fill="#100d0b"/>
-  <rect width="1200" height="760" rx="18" fill="url(#lgGrid)"/>
-  <text x="48" y="44" class="lg-kick">THE CONTINUITY LAYER · ONE PERSON, THE SIX SERVICES AROUND THEM, ONE SHARED VIEW</text>
+<style>
+.ly-t1{font:700 16px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.03em;fill:#f6f0e4}
+.ly-t2{font:600 11px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.16em;fill:#f6f0e4}
+.ly-tb{font:700 14px 'Libre Franklin',system-ui,sans-serif;fill:#f6f0e4}
+.ly-g1{font:700 14px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.04em;fill:#f6f0e4}
+.ly-g3{font:700 13px 'Libre Franklin',system-ui,sans-serif;fill:#f6f0e4}
+.ly-g2{font:600 13px 'Libre Franklin',system-ui,sans-serif;fill:#6f6759}
 
-  <!-- glow + the Layer band -->
-  <circle cx="600" cy="390" r="240" fill="url(#lgGlow)"/>
-  <circle cx="600" cy="390" r="150" fill="none" stroke="url(#lgBand)" stroke-width="44"/>
-  <circle cx="600" cy="390" r="176" fill="none" stroke="#f26a1b" stroke-opacity=".35" stroke-width="2"/>
-  <circle cx="600" cy="390" r="124" fill="none" stroke="#a83f04" stroke-opacity=".5" stroke-width="2"/>
 
-  <path id="thread" d="M470.1 315.0 C470.4 313.1 470.7 311.2 471.1 309.4 C471.5 307.6 472.0 305.7 472.6 304.0 C473.2 302.3 473.9 300.6 474.8 299.0 C475.7 297.4 476.7 296.0 477.9 294.6 C479.1 293.2 480.4 292.0 481.8 290.8 C483.2 289.6 484.7 288.6 486.3 287.7 C487.9 286.8 489.7 285.9 491.4 285.1 C493.1 284.3 494.8 283.5 496.5 282.8 C498.2 282.1 500.0 281.4 501.6 280.7 C503.2 280.0 504.9 279.2 506.4 278.4 C507.9 277.6 509.3 276.7 510.7 275.7 C512.1 274.7 513.4 273.7 514.6 272.5 C515.9 271.3 517.0 270.0 518.2 268.7 C519.4 267.4 520.5 265.9 521.6 264.5 C522.7 263.1 523.8 261.6 525.0 260.1 C526.2 258.7 527.3 257.2 528.6 255.8 C529.9 254.4 531.2 253.0 532.6 251.8 C534.0 250.6 535.6 249.5 537.1 248.6 C538.6 247.7 540.2 246.9 541.9 246.3 C543.6 245.7 545.4 245.3 547.2 245.0 C549.0 244.7 550.8 244.5 552.7 244.5 C554.6 244.5 556.5 244.6 558.4 244.8 C560.3 245.0 562.2 245.3 564.0 245.5 C565.8 245.7 567.6 246.0 569.4 246.2 C571.2 246.4 573.0 246.5 574.7 246.5 C576.4 246.5 578.1 246.6 579.8 246.4 C581.5 246.2 583.1 246.0 584.8 245.6 C586.5 245.2 588.1 244.7 589.8 244.1 C591.5 243.5 593.1 242.8 594.8 242.1 C596.5 241.4 598.2 240.7 600.0 240.0 C601.8 239.3 603.5 238.7 605.3 238.1 C607.1 237.5 608.9 237.0 610.7 236.7 C612.5 236.4 614.4 236.1 616.2 236.1 C618.0 236.1 619.8 236.2 621.6 236.5 C623.4 236.8 625.1 237.3 626.8 238.0 C628.5 238.7 630.2 239.5 631.8 240.4 C633.4 241.3 635.0 242.3 636.5 243.4 C638.0 244.5 639.6 245.7 641.1 246.8 C642.6 247.9 644.0 249.1 645.4 250.1 C646.8 251.1 648.3 252.2 649.8 253.1 C651.3 254.0 652.8 254.8 654.3 255.5 C655.8 256.2 657.5 256.8 659.1 257.3 C660.7 257.8 662.4 258.1 664.1 258.5 C665.8 258.9 667.7 259.1 669.5 259.4 C671.3 259.7 673.1 259.8 675.0 260.1 C676.9 260.4 678.8 260.7 680.6 261.1 C682.4 261.5 684.3 262.0 686.0 262.6 C687.7 263.2 689.4 263.9 691.0 264.8 C692.6 265.7 694.0 266.7 695.4 267.9 C696.8 269.1 698.1 270.4 699.2 271.8 C700.4 273.2 701.3 274.7 702.3 276.3 C703.2 277.9 704.1 279.7 704.9 281.4 C705.7 283.1 706.5 284.8 707.2 286.5 C707.9 288.2 708.6 290.0 709.3 291.6 C710.0 293.2 710.8 294.9 711.6 296.4 C712.4 297.9 713.3 299.3 714.3 300.7 C715.3 302.1 716.3 303.4 717.5 304.6 C718.7 305.9 720.0 307.0 721.3 308.2 C722.6 309.4 724.1 310.5 725.5 311.6 C726.9 312.7 728.4 313.8 729.9 315.0 C731.4 316.2 732.8 317.3 734.2 318.6 C735.6 319.9 737.0 321.2 738.2 322.6 C739.4 324.0 740.5 325.6 741.4 327.1 C742.3 328.7 743.1 330.2 743.7 331.9 C744.3 333.6 744.7 335.4 745.0 337.2 C745.3 339.0 745.5 340.8 745.5 342.7 C745.5 344.6 745.4 346.5 745.2 348.4 C745.0 350.3 744.7 352.2 744.5 354.0 C744.3 355.8 744.0 357.6 743.8 359.4 C743.6 361.2 743.5 363.0 743.5 364.7 C743.5 366.4 743.5 368.1 743.6 369.8 C743.8 371.5 744.0 373.1 744.4 374.8 C744.8 376.5 745.3 378.1 745.9 379.8 C746.5 381.5 747.2 383.1 747.9 384.8 C748.6 386.5 749.3 388.2 750.0 390.0 C750.7 391.8 751.4 393.5 751.9 395.3 C752.4 397.1 753.0 398.9 753.3 400.7 C753.6 402.5 753.9 404.4 753.9 406.2 C753.9 408.0 753.8 409.8 753.5 411.6 C753.2 413.4 752.6 415.1 752.0 416.8 C751.4 418.5 750.5 420.2 749.6 421.8 C748.7 423.4 747.7 424.9 746.6 426.5 C745.5 428.1 744.3 429.6 743.2 431.1 C742.1 432.6 741.0 433.9 739.9 435.4 C738.8 436.8 737.8 438.3 736.9 439.8 C736.0 441.3 735.2 442.8 734.5 444.3 C733.8 445.9 733.2 447.5 732.7 449.1 C732.2 450.7 731.9 452.4 731.5 454.1 C731.1 455.8 730.9 457.7 730.6 459.5 C730.3 461.3 730.2 463.1 729.9 465.0 C729.6 466.9 729.3 468.8 728.9 470.6 C728.5 472.4 728.0 474.3 727.4 476.0 C726.8 477.7 726.1 479.4 725.2 481.0 C724.3 482.6 723.3 484.0 722.1 485.4 C720.9 486.8 719.6 488.0 718.2 489.2 C716.8 490.4 715.3 491.4 713.7 492.3 C712.1 493.2 710.3 494.1 708.6 494.9 C706.9 495.7 705.2 496.5 703.5 497.2 C701.8 497.9 700.0 498.6 698.4 499.3 C696.8 500.0 695.1 500.8 693.6 501.6 C692.1 502.4 690.7 503.3 689.3 504.3 C687.9 505.3 686.6 506.3 685.4 507.5 C684.1 508.7 683.0 510.0 681.8 511.3 C680.6 512.6 679.5 514.1 678.4 515.5 C677.3 516.9 676.2 518.4 675.0 519.9 C673.8 521.4 672.7 522.8 671.4 524.2 C670.1 525.6 668.8 527.0 667.4 528.2 C666.0 529.4 664.4 530.5 662.9 531.4 C661.4 532.3 659.8 533.1 658.1 533.7 C656.4 534.3 654.6 534.7 652.8 535.0 C651.0 535.3 649.2 535.5 647.3 535.5 C645.4 535.5 643.5 535.4 641.6 535.2 C639.7 535.0 637.8 534.7 636.0 534.5 C634.2 534.3 632.4 534.0 630.6 533.8 C628.8 533.6 627.0 533.5 625.3 533.5 C623.6 533.5 621.9 533.5 620.2 533.6 C618.5 533.8 616.9 534.0 615.2 534.4 C613.5 534.8 611.9 535.3 610.2 535.9 C608.5 536.5 606.9 537.2 605.2 537.9 C603.5 538.6 601.8 539.3 600.0 540.0 C598.2 540.7 596.5 541.4 594.7 541.9 C592.9 542.4 591.1 543.0 589.3 543.3 C587.5 543.6 585.6 543.9 583.8 543.9 C582.0 543.9 580.2 543.8 578.4 543.5 C576.6 543.2 574.9 542.6 573.2 542.0 C571.5 541.4 569.8 540.5 568.2 539.6 C566.6 538.7 565.0 537.7 563.5 536.6 C562.0 535.5 560.4 534.3 558.9 533.2 C557.4 532.1 556.0 531.0 554.6 529.9 C553.2 528.8 551.7 527.8 550.2 526.9 C548.7 526.0 547.2 525.2 545.7 524.5 C544.2 523.8 542.5 523.2 540.9 522.7 C539.3 522.2 537.6 521.9 535.9 521.5 C534.2 521.1 532.3 520.9 530.5 520.6 C528.7 520.3 526.9 520.2 525.0 519.9 C523.1 519.6 521.2 519.3 519.4 518.9 C517.6 518.5 515.7 518.0 514.0 517.4 C512.3 516.8 510.6 516.1 509.0 515.2 C507.4 514.3 506.0 513.3 504.6 512.1 C503.2 510.9 502.0 509.6 500.8 508.2 C499.6 506.8 498.6 505.3 497.7 503.7 C496.8 502.1 495.9 500.3 495.1 498.6 C494.3 496.9 493.5 495.2 492.8 493.5 C492.1 491.8 491.4 490.0 490.7 488.4 C490.0 486.8 489.2 485.1 488.4 483.6 C487.6 482.1 486.7 480.7 485.7 479.3 C484.7 477.9 483.7 476.6 482.5 475.4 C481.3 474.1 480.0 473.0 478.7 471.8 C477.4 470.6 475.9 469.5 474.5 468.4 C473.1 467.3 471.6 466.2 470.1 465.0 C468.7 463.8 467.2 462.7 465.8 461.4 C464.4 460.1 463.0 458.8 461.8 457.4 C460.6 456.0 459.5 454.4 458.6 452.9 C457.7 451.3 456.9 449.8 456.3 448.1 C455.7 446.4 455.3 444.6 455.0 442.8 C454.7 441.0 454.5 439.2 454.5 437.3 C454.5 435.4 454.6 433.5 454.8 431.6 C455.0 429.7 455.3 427.8 455.5 426.0 C455.7 424.2 456.0 422.4 456.2 420.6 C456.4 418.8 456.5 417.0 456.5 415.3 C456.5 413.6 456.5 411.9 456.4 410.2 C456.2 408.5 456.0 406.9 455.6 405.2 C455.2 403.5 454.7 401.9 454.1 400.2 C453.5 398.5 452.8 396.9 452.1 395.2 C451.4 393.5 450.7 391.8 450.0 390.0 C449.3 388.2 448.7 386.5 448.1 384.7 C447.6 382.9 447.0 381.1 446.7 379.3 C446.4 377.5 446.1 375.6 446.1 373.8 C446.1 372.0 446.2 370.2 446.5 368.4 C446.8 366.6 447.4 364.9 448.0 363.2 C448.6 361.5 449.5 359.8 450.4 358.2 C451.3 356.6 452.3 355.1 453.4 353.5 C454.5 351.9 455.7 350.4 456.8 348.9 C457.9 347.4 459.1 346.1 460.1 344.6 C461.2 343.2 462.2 341.7 463.1 340.2 C464.0 338.7 464.8 337.2 465.5 335.7 C466.2 334.1 466.8 332.5 467.3 330.9 C467.8 329.3 468.1 327.6 468.5 325.9 C468.9 324.2 469.1 322.3 469.4 320.5 C469.7 318.7 469.8 316.9 470.1 315.0 Z" fill="none" stroke="#f6f0e4" stroke-width="2.5" opacity=".9"/>
-  <!-- the person: the space in the middle -->
-  <circle cx="600" cy="390" r="122" fill="#f6f0e4"/>
-  <g transform="translate(600,352)">
-    <circle cx="0" cy="-14" r="14" fill="#100d0b"/>
-    <path d="M-26 30 C-26 8 -14 2 0 2 C14 2 26 8 26 30 Z" fill="#100d0b"/>
-  </g>
-  <text x="600" y="416" text-anchor="middle" class="lg-lab">THE PERSON</text>
-  <text x="600" y="434" text-anchor="middle" class="lg-sub">at the centre</text>
+#ly-node-adhd,#ly-node-rce,#ly-node-alcohol,#ly-node-cgl,#ly-node-mind{animation:allnode 17s linear infinite}
+@keyframes allnode{0%,32.2%{opacity:.10;fill:#f26a1b}32.35%,47.65%{opacity:1;fill:#f6f0e4}47.9%,84.3%{opacity:.10;fill:#f26a1b}84.47%,96.24%{opacity:1;fill:#f6f0e4}96.5%,100%{opacity:.10;fill:#f26a1b}}
+#ly-ringpulse{opacity:0;animation:ringp 17s linear infinite}
+@keyframes ringp{0%,32.2%{opacity:0}32.35%,47.65%{opacity:.5}47.9%,84.3%{opacity:0}84.47%,96.24%{opacity:.5}96.5%,100%{opacity:0}}
+.ly-panel-t{font:700 15px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.18em;fill:#6f6759}
+.ly-stxt{font:600 21px 'Libre Franklin',system-ui,sans-serif;fill:#100d0b}
+.ly-snum2{font:800 17px 'Libre Franklin',system-ui,sans-serif;fill:#f6f0e4}
+#ly-step1{opacity:.26;animation:s1 17s linear infinite}
+@keyframes s1{0%,17.06%{opacity:1}17.9%,100%{opacity:.26}}
+#ly-ptick1{opacity:0;animation:pt1 17s linear infinite}
+@keyframes pt1{0%,17.06%{opacity:0}17.9%,98%{opacity:1}100%{opacity:0}}
+#ly-step2{opacity:.26;animation:s2 17s linear infinite}
+@keyframes s2{0%,16.6%{opacity:.26}17.4%,32.35%{opacity:1}33.2%,100%{opacity:.26}}
+#ly-ptick2{opacity:0;animation:pt2 17s linear infinite}
+@keyframes pt2{0%,32.35%{opacity:0}33.2%,98%{opacity:1}100%{opacity:0}}
+#ly-step3{opacity:.26;animation:s3 17s linear infinite}
+@keyframes s3{0%,31.9%{opacity:.26}32.7%,47.65%{opacity:1}48.5%,100%{opacity:.26}}
+#ly-ptick3{opacity:0;animation:pt3 17s linear infinite}
+@keyframes pt3{0%,47.65%{opacity:0}48.5%,98%{opacity:1}100%{opacity:0}}
+#ly-step4{opacity:.26;animation:s4 17s linear infinite}
+@keyframes s4{0%,47.2%{opacity:.26}48%,66.88%{opacity:1}67.7%,100%{opacity:.26}}
+#ly-ptick4{opacity:0;animation:pt4 17s linear infinite}
+@keyframes pt4{0%,66.88%{opacity:0}67.7%,98%{opacity:1}100%{opacity:0}}
+#ly-step5{opacity:.26;animation:s5 17s linear infinite}
+@keyframes s5{0%,66.4%{opacity:.26}67.2%,84.47%{opacity:1}85.3%,100%{opacity:.26}}
+#ly-ptick5{opacity:0;animation:pt5 17s linear infinite}
+@keyframes pt5{0%,84.47%{opacity:0}85.3%,98%{opacity:1}100%{opacity:0}}
+#ly-step6{opacity:.26;animation:s6 17s linear infinite}
+@keyframes s6{0%,84%{opacity:.26}84.8%,96.24%{opacity:1}97%,100%{opacity:.26}}
+#ly-ptick6{opacity:0;animation:pt6 17s linear infinite}
+@keyframes pt6{0%,96.24%{opacity:0}97%,98.5%{opacity:1}100%{opacity:0}}
+.ly-ghost{opacity:.22;filter:grayscale(1)}
+.ly-ghost .ly-t1,.ly-ghost .ly-t2,.ly-ghost .ly-tb{fill:#100d0b}
+.ly-olab{font:700 19px 'Libre Franklin',system-ui,sans-serif;letter-spacing:.10em;fill:#a2643f}
+.ly-snum{font:800 13px 'Libre Franklin',system-ui,sans-serif;fill:#f6f0e4}
+.ly-slab{font:600 14px 'Libre Franklin',system-ui,sans-serif;fill:#4a443c}
+.ly-lead2{stroke:#100d0b;stroke-opacity:.25;stroke-width:1;fill:none}
+.ly-fcap{font:400 13px 'Libre Franklin',system-ui,sans-serif;fill:#6f6759}
+.ly-cap{font:700 19px 'Libre Franklin',system-ui,sans-serif;fill:#100d0b}
+.ly-ldr{fill:none;stroke:#100d0b;stroke-width:2.5;marker-end:url(#ly-arr)}
+.ly-mk{fill:#f6f0e4;stroke:#100d0b;stroke-width:1.5}
+g.mk{fill:none;stroke:none}
 
-  <!-- six connections: service block → its own login → Partner Node on the Layer -->
-  <g id="lgL">
-    <path id="p1" class="lg-pipe" d="M280 150 C360 150 400 260 471 316"/>
-    <path id="p2" class="lg-pipe" d="M280 390 L450 390"/>
-    <path id="p3" class="lg-pipe" d="M280 630 C360 630 400 520 471 464"/>
-    <path id="p4" class="lg-pipe" d="M920 150 C840 150 800 260 729 316"/>
-    <path id="p5" class="lg-pipe" d="M920 390 L750 390"/>
-    <path id="p6" class="lg-pipe" d="M920 630 C840 630 800 520 729 464"/>
-  </g>
-  <!-- service blocks (unnamed by design) -->
-  <g>
-    <rect x="10" y="98" width="270" height="104" rx="16" class="lg-block"/><text x="145" y="130" text-anchor="middle" class="lg-svc">CGL</text><use href="#lgBrain" x="73" y="140" width="30" height="23"/><text x="109" y="157" text-anchor="start" class="lg-login">CONTINUITY LOGIN</text><text x="145" y="184" text-anchor="middle" class="lg-svc2">addiction service</text>
-    <rect x="10" y="338" width="270" height="104" rx="16" class="lg-block"/><text x="145" y="370" text-anchor="middle" class="lg-svc">CRS</text><use href="#lgBrain" x="73" y="380" width="30" height="23"/><text x="109" y="397" text-anchor="start" class="lg-login">CONTINUITY LOGIN</text><text x="145" y="424" text-anchor="middle" class="lg-svc2">CGL aftercare, in the community</text>
-    <rect x="10" y="578" width="270" height="104" rx="16" class="lg-block"/><text x="145" y="610" text-anchor="middle" class="lg-svc">RCE WELLBEING HUB</text><use href="#lgBrain" x="73" y="620" width="30" height="23"/><text x="109" y="637" text-anchor="start" class="lg-login">CONTINUITY LOGIN</text><text x="145" y="664" text-anchor="middle" class="lg-svc2">waiting and wellbeing</text>
-    <rect x="920" y="98" width="270" height="104" rx="16" class="lg-block"/><text x="1055" y="130" text-anchor="middle" class="lg-svc">CPFT ADULT ADHD TEAM</text><use href="#lgBrain" x="983" y="140" width="30" height="23"/><text x="1019" y="157" text-anchor="start" class="lg-login">CONTINUITY LOGIN</text><text x="1055" y="184" text-anchor="middle" class="lg-svc2">assessment · review</text>
-    <rect x="920" y="338" width="270" height="104" rx="16" class="lg-block"/><text x="1055" y="370" text-anchor="middle" class="lg-svc">ALCOHOL LIAISON</text><use href="#lgBrain" x="983" y="380" width="30" height="23"/><text x="1019" y="397" text-anchor="start" class="lg-login">CONTINUITY LOGIN</text><text x="1055" y="424" text-anchor="middle" class="lg-svc2">Addenbrooke’s bedside</text>
-    <rect x="920" y="578" width="270" height="104" rx="16" class="lg-block"/><text x="1055" y="610" text-anchor="middle" class="lg-svc">MIND / WORKWELL</text><use href="#lgBrain" x="983" y="620" width="30" height="23"/><text x="1019" y="637" text-anchor="start" class="lg-login">CONTINUITY LOGIN</text><text x="1055" y="664" text-anchor="middle" class="lg-svc2">mental health</text>
-  </g>
-  <!-- Partner Nodes on the band -->
-  <g>
-    <circle cx="471" cy="316" r="11" class="lg-node"/><circle cx="471" cy="316" r="17" class="lg-node2"/>
-    <circle cx="450" cy="390" r="11" class="lg-node"/><circle cx="450" cy="390" r="17" class="lg-node2"/>
-    <circle cx="471" cy="464" r="11" class="lg-node"/><circle cx="471" cy="464" r="17" class="lg-node2"/>
-    <circle cx="729" cy="316" r="11" class="lg-node"/><circle cx="729" cy="316" r="17" class="lg-node2"/>
-    <circle cx="750" cy="390" r="11" class="lg-node"/><circle cx="750" cy="390" r="17" class="lg-node2"/>
-    <circle cx="729" cy="464" r="11" class="lg-node"/><circle cx="729" cy="464" r="17" class="lg-node2"/>
-  </g>
-  <text x="600" y="196" text-anchor="middle" class="lg-tag">PARTNER NODES · EACH SERVICE'S OWN DOOR</text>
-  <!-- callouts (static, in the base layer) -->
-  <g id="lgCallouts">
-    <g class="lg-call"><rect x="10" y="490" width="290" height="30" rx="15"/><text x="155" y="509.5" text-anchor="middle">YOUR LOGIN &middot; YOUR OWN DOOR</text><path d="M155 490 L145 404"/><circle cx="145" cy="404" r="4"/></g>
-    <g class="lg-call"><rect x="50" y="265" width="250" height="30" rx="15"/><text x="175" y="284.5" text-anchor="middle">CRS SUBMITS TO THE LAYER</text><path d="M300 280 L362 381"/><circle cx="362" cy="381" r="4"/></g>
-    <g class="lg-call"><rect x="865" y="490" width="270" height="30" rx="15"/><text x="1000" y="509.5" text-anchor="middle">THE LAYER DOES THE LAST LEG</text><path d="M865 505 L712 397"/><circle cx="712" cy="397" r="4"/></g>
-    <g class="lg-call"><rect x="445" y="625" width="310" height="30" rx="15"/><text x="600" y="644.5" text-anchor="middle">ONE THREAD &middot; EVERY NODE SEES IT</text><path d="M600 625 L600 548"/><circle cx="600" cy="548" r="4"/></g>
-    <g class="lg-call"><rect x="805" y="235" width="350" height="30" rx="15"/><text x="980" y="254.5" text-anchor="middle">NODES ARE NOT WIRED TO EACH OTHER</text><path d="M805 250 L760 352"/><circle cx="760" cy="352" r="4"/></g>
-  </g>
+#ly-msg{offset-path:path("M401.2 592.5 L552.8 505 L627.3 462 L714 424");offset-rotate:0deg;opacity:0;animation:msgmove 17s linear infinite,msgfade 17s linear infinite}
+@keyframes msgmove{0%{offset-distance:0%}17.06%{offset-distance:45%}47.65%{offset-distance:45%}66.88%,100%{offset-distance:100%}}
+@keyframes msgfade{0%{opacity:0}1%,66.88%{opacity:1}68.5%,100%{opacity:0}}
+#ly-reply{offset-path:path("M714 424 L627.3 462 L552.8 505");offset-rotate:0deg;opacity:0;animation:repmove 17s linear infinite,repfade 17s linear infinite}
+@keyframes repmove{0%,66.88%{offset-distance:0%}84.47%,100%{offset-distance:100%}}
+@keyframes repfade{0%,66.4%{opacity:0}66.88%,84.47%{opacity:1}86.5%,100%{opacity:0}}
+#ly-node-crs{animation:nodeflash 17s linear infinite}
+@keyframes nodeflash{0%,16.9%{fill:#f26a1b}17.06%,47.65%{fill:#f6f0e4}47.9%,84.3%{fill:#f26a1b}84.47%,96.24%{fill:#f6f0e4}96.5%,100%{fill:#f26a1b}}
+#ly-ping{animation:ping 17s linear infinite}
+@keyframes ping{0%,66.88%{opacity:0}67.6%{opacity:.95}70.5%,100%{opacity:0}}
+#ly-tick1{animation:t1 17s linear infinite}
+@keyframes t1{0%,17.06%{opacity:0}18.5%,98%{opacity:1}100%{opacity:0}}
+#ly-tick2{animation:t2 17s linear infinite}
+@keyframes t2{0%,84.47%{opacity:0}86%,98%{opacity:1}100%{opacity:0}}
+#ly-login-crs{animation:wake 17s linear infinite}
+@keyframes wake{0%,0%{opacity:.75}1.5%,100%{opacity:1}}
+@keyframes sms{from{offset-distance:0%}to{offset-distance:100%}}
+@media (prefers-reduced-motion:reduce){.ly-mv{display:none}}
+</style></defs>
+<rect x="340" y="-120" width="1260" height="1120" fill="#f6f0e4"/>
+<g id="ly-figure" transform="translate(470,42) scale(0.86)">
 
-  <!-- six delivery channels: each Partner Node also delivers to the person -->
-  <g id="lgDeliver">
-    <path id="d1" class="lg-chan" d="M490.7 327.3 L537.5 354.2"/>
-    <path id="d2" class="lg-chan" d="M474.0 390.0 L528.0 390.0"/>
-    <path id="d3" class="lg-chan" d="M490.7 452.7 L537.5 425.8"/>
-    <path id="d4" class="lg-chan" d="M709.3 327.3 L662.5 354.2"/>
-    <path id="d5" class="lg-chan" d="M726.0 390.0 L672.0 390.0"/>
-    <path id="d6" class="lg-chan" d="M709.3 452.7 L662.5 425.8"/>
-  </g>
-  <text x="48" y="716" class="lg-tag">SERVICES KEEP THEIR OWN ROUTES TO THE PERSON · SERVICES DO NOT CONNECT TO EACH OTHER · NO CLINICAL RECORD ACCESS</text><text x="48" y="738" class="lg-tag">ILLUSTRATIVE · THE SERVICES IN MY OWN JOURNEY · NONE APPROACHED, NONE ONBOARDED · SEE THE FOOT OF THE PAGE</text>
+<circle id="ly-ringpulse" cx="700" cy="420" r="170" fill="none" stroke="#f6f0e4" stroke-width="56"/>
+<circle id="ly-band" cx="700" cy="420" r="170" fill="none" stroke="#f26a1b" stroke-width="56"/>
+<line id="ly-pipe-cgl" x1="700.0" y1="75.0" x2="700.0" y2="250.0" stroke="#f26a1b" stroke-width="18" class="ly-ghost"/>
+<line id="ly-chan-cgl" x1="700.0" y1="250.0" x2="700.0" y2="336.0" stroke="#f26a1b" stroke-width="14" stroke-linecap="round" class="ly-ghost"/>
+<line id="ly-pipe-adhd" x1="998.8" y1="247.5" x2="847.2" y2="335.0" stroke="#f26a1b" stroke-width="18" class="ly-ghost"/>
+<line id="ly-chan-adhd" x1="847.2" y1="335.0" x2="772.7" y2="378.0" stroke="#f26a1b" stroke-width="14" stroke-linecap="round" class="ly-ghost"/>
+<line id="ly-pipe-rce" x1="401.2" y1="247.5" x2="552.8" y2="335.0" stroke="#f26a1b" stroke-width="18" class="ly-ghost"/>
+<line id="ly-chan-rce" x1="552.8" y1="335.0" x2="627.3" y2="378.0" stroke="#f26a1b" stroke-width="14" stroke-linecap="round" class="ly-ghost"/>
+<line id="ly-pipe-alcohol" x1="998.8" y1="592.5" x2="847.2" y2="505.0" stroke="#f26a1b" stroke-width="18" class="ly-ghost"/>
+<line id="ly-chan-alcohol" x1="847.2" y1="505.0" x2="772.7" y2="462.0" stroke="#f26a1b" stroke-width="14" stroke-linecap="round" class="ly-ghost"/>
+<line id="ly-pipe-crs" x1="401.2" y1="592.5" x2="552.8" y2="505.0" stroke="#f26a1b" stroke-width="18"/>
+<line id="ly-chan-crs" x1="552.8" y1="505.0" x2="627.3" y2="462.0" stroke="#f26a1b" stroke-width="14" stroke-linecap="round"/>
+<line id="ly-pipe-mind" x1="700.0" y1="765.0" x2="700.0" y2="590.0" stroke="#f26a1b" stroke-width="18" class="ly-ghost"/>
+<line id="ly-chan-mind" x1="700.0" y1="590.0" x2="700.0" y2="504.0" stroke="#f26a1b" stroke-width="14" stroke-linecap="round" class="ly-ghost"/>
+<path id="ly-thread" d="M785.0 272.8 L791.5 273.4 L798.0 274.7 L803.9 277.1 L808.9 280.6 L813.2 285.1 L816.5 290.6 L819.1 296.6 L821.3 303.0 L823.3 309.0 L825.6 314.6 L828.5 319.6 L832.1 324.0 L836.6 327.8 L841.8 331.4 L847.2 335.0 L852.6 338.8 L857.5 343.3 L861.3 348.1 L864.0 353.7 L865.5 359.8 L865.6 366.2 L864.8 372.8 L863.5 379.2 L862.3 385.5 L861.5 391.5 L861.5 397.3 L862.4 402.9 L864.4 408.5 L867.1 414.2 L870.0 420.0 L872.7 426.1 L874.8 432.2 L875.7 438.4 L875.3 444.6 L873.3 450.6 L870.3 456.2 L866.4 461.4 L862.0 466.4 L857.8 471.3 L854.0 476.0 L851.2 481.1 L849.2 486.4 L848.1 492.2 L847.6 498.5 L847.2 505.0 L846.6 511.5 L845.3 518.0 L842.9 523.9 L839.4 528.9 L834.9 533.2 L829.4 536.5 L823.4 539.1 L817.0 541.3 L811.0 543.3 L805.4 545.6 L800.4 548.5 L796.0 552.1 L792.2 556.6 L788.6 561.8 L785.0 567.2 L781.2 572.6 L776.7 577.5 L771.9 581.3 L766.3 584.0 L760.2 585.5 L753.8 585.6 L747.2 584.8 L740.8 583.5 L734.5 582.3 L728.5 581.5 L722.7 581.5 L717.1 582.4 L711.5 584.4 L705.8 587.1 L700.0 590.0 L693.9 592.7 L687.8 594.8 L681.6 595.7 L675.4 595.3 L669.4 593.3 L663.8 590.3 L658.6 586.4 L653.6 582.0 L648.7 577.8 L644.0 574.0 L638.9 571.2 L633.6 569.2 L627.8 568.1 L621.5 567.6 L615.0 567.2 L608.5 566.6 L602.0 565.3 L596.1 562.9 L591.1 559.4 L586.8 554.9 L583.5 549.4 L580.9 543.4 L578.7 537.0 L576.7 531.0 L574.4 525.4 L571.5 520.4 L567.9 516.0 L563.4 512.2 L558.2 508.6 L552.8 505.0 L547.4 501.2 L542.5 496.7 L538.7 491.9 L536.0 486.3 L534.5 480.2 L534.4 473.8 L535.2 467.2 L536.5 460.8 L537.7 454.5 L538.5 448.5 L538.5 442.7 L537.6 437.1 L535.6 431.5 L532.9 425.8 L530.0 420.0 L527.3 413.9 L525.2 407.8 L524.3 401.6 L524.7 395.4 L526.7 389.4 L529.7 383.8 L533.6 378.6 L538.0 373.6 L542.2 368.7 L546.0 364.0 L548.8 358.9 L550.8 353.6 L551.9 347.8 L552.4 341.5 L552.8 335.0 L553.4 328.5 L554.7 322.0 L557.1 316.1 L560.6 311.1 L565.1 306.8 L570.6 303.5 L576.6 300.9 L583.0 298.7 L589.0 296.7 L594.6 294.4 L599.6 291.5 L604.0 287.9 L607.8 283.4 L611.4 278.2 L615.0 272.8 L618.8 267.4 L623.3 262.5 L628.1 258.7 L633.7 256.0 L639.8 254.5 L646.2 254.4 L652.8 255.2 L659.2 256.5 L665.5 257.7 L671.5 258.5 L677.3 258.5 L682.9 257.6 L688.5 255.6 L694.2 252.9 L700.0 250.0 L706.1 247.3 L712.2 245.2 L718.4 244.3 L724.6 244.7 L730.6 246.7 L736.2 249.7 L741.4 253.6 L746.4 258.0 L751.3 262.2 L756.0 266.0 L761.1 268.8 L766.4 270.8 L772.2 271.9 L778.5 272.4 Z" fill="none" stroke="#f6f0e4" stroke-width="3.5"/>
+<path id="ly-track" d="M700 250 A170 170 0 1 1 700 590 A170 170 0 1 1 700 250" fill="none" stroke="none"/>
+<g id="ly-login-cgl" class="ly-ghost" transform="translate(172.5,-46.2)"><rect x="417.5" y="41.2" width="220" height="160" rx="12" fill="#f26a1b"/>
+<text x="527.5" y="69.2" text-anchor="middle" class="ly-t1">CGL</text>
+<text x="527.5" y="87.2" text-anchor="middle" class="ly-t2">CONTINUITY LOGIN</text>
+<rect x="487.5" y="99.2" width="80" height="52" rx="4" fill="#100d0b"/><rect x="491.5" y="103.2" width="72" height="44" rx="2" fill="#f6f0e4"/>
+<use href="#ly-lgBrain" x="506.5" y="109.2" width="42" height="31"/>
+<rect x="477.5" y="151.2" width="100" height="6" rx="3" fill="#100d0b"/>
+<text x="527.5" y="183.2" text-anchor="middle" class="ly-tb">Micro-Checkins</text></g>
+<g id="ly-login-adhd" class="ly-ghost" transform="translate(126.3,126.3)"><rect x="762.5" y="41.2" width="220" height="160" rx="12" fill="#f26a1b"/>
+<text x="872.5" y="65.2" text-anchor="middle" class="ly-t1">CPFT ADULT</text><text x="872.5" y="85.2" text-anchor="middle" class="ly-t1">ADHD TEAM</text>
+<text x="872.5" y="103.2" text-anchor="middle" class="ly-t2">CONTINUITY LOGIN</text>
+<rect x="832.5" y="111.2" width="80" height="52" rx="4" fill="#100d0b"/><rect x="836.5" y="115.2" width="72" height="44" rx="2" fill="#f6f0e4"/>
+<use href="#ly-lgBrain" x="851.5" y="121.2" width="42" height="31"/>
+<rect x="822.5" y="163.2" width="100" height="6" rx="3" fill="#100d0b"/>
+<text x="872.5" y="183.2" text-anchor="middle" class="ly-tb">Status Updates</text></g>
+<g id="ly-login-rce" class="ly-ghost" transform="translate(46.2,-172.5)"><rect x="245.0" y="340.0" width="220" height="160" rx="12" fill="#f26a1b"/>
+<text x="355.0" y="368.0" text-anchor="middle" class="ly-t1">RCE WELLBEING HUB</text>
+<text x="355.0" y="386.0" text-anchor="middle" class="ly-t2">CONTINUITY LOGIN</text>
+<rect x="315.0" y="398.0" width="80" height="52" rx="4" fill="#100d0b"/><rect x="319.0" y="402.0" width="72" height="44" rx="2" fill="#f6f0e4"/>
+<use href="#ly-lgBrain" x="334.0" y="408.0" width="42" height="31"/>
+<rect x="305.0" y="450.0" width="100" height="6" rx="3" fill="#100d0b"/>
+<text x="355.0" y="482.0" text-anchor="middle" class="ly-tb">Micro Waiting Prompts</text></g>
+<g id="ly-login-alcohol" class="ly-ghost" transform="translate(-46.2,172.5)"><rect x="935.0" y="340.0" width="220" height="160" rx="12" fill="#f26a1b"/>
+<text x="1045.0" y="368.0" text-anchor="middle" class="ly-t1">ALCOHOL LIAISON</text>
+<text x="1045.0" y="386.0" text-anchor="middle" class="ly-t2">CONTINUITY LOGIN</text>
+<rect x="1005.0" y="398.0" width="80" height="52" rx="4" fill="#100d0b"/><rect x="1009.0" y="402.0" width="72" height="44" rx="2" fill="#f6f0e4"/>
+<use href="#ly-lgBrain" x="1024.0" y="408.0" width="42" height="31"/>
+<rect x="995.0" y="450.0" width="100" height="6" rx="3" fill="#100d0b"/>
+<text x="1045.0" y="482.0" text-anchor="middle" class="ly-tb">A&amp;E Bedside attended</text></g>
+<g id="ly-login-crs" transform="translate(-126.3,-126.3)"><rect x="417.5" y="638.8" width="220" height="160" rx="12" fill="#f26a1b"/>
+<text x="527.5" y="666.8" text-anchor="middle" class="ly-t1">CRS</text>
+<text x="527.5" y="684.8" text-anchor="middle" class="ly-t2">CONTINUITY LOGIN</text>
+<rect x="487.5" y="696.8" width="80" height="52" rx="4" fill="#100d0b"/><rect x="491.5" y="700.8" width="72" height="44" rx="2" fill="#f6f0e4"/>
+<use href="#ly-lgBrain" x="506.5" y="706.8" width="42" height="31"/>
+<rect x="477.5" y="748.8" width="100" height="6" rx="3" fill="#100d0b"/>
+<text x="527.5" y="780.8" text-anchor="middle" class="ly-tb">Micro-Checkins</text></g>
+<g id="ly-login-mind" class="ly-ghost" transform="translate(-172.5,46.2)"><rect x="762.5" y="638.8" width="220" height="160" rx="12" fill="#f26a1b"/>
+<text x="872.5" y="666.8" text-anchor="middle" class="ly-t1">MIND / WORKWELL</text>
+<text x="872.5" y="684.8" text-anchor="middle" class="ly-t2">CONTINUITY LOGIN</text>
+<rect x="832.5" y="696.8" width="80" height="52" rx="4" fill="#100d0b"/><rect x="836.5" y="700.8" width="72" height="44" rx="2" fill="#f6f0e4"/>
+<use href="#ly-lgBrain" x="851.5" y="706.8" width="42" height="31"/>
+<rect x="822.5" y="748.8" width="100" height="6" rx="3" fill="#100d0b"/>
+<text x="872.5" y="780.8" text-anchor="middle" class="ly-tb">Status Updates</text></g>
+<circle class="ly-ghost" id="ly-node-cgl" cx="700.0" cy="250.0" r="21" fill="#f26a1b" stroke="#100d0b" stroke-width="4"/>
+<circle class="ly-ghost" id="ly-node-adhd" cx="847.2" cy="335.0" r="21" fill="#f26a1b" stroke="#100d0b" stroke-width="4"/>
+<circle class="ly-ghost" id="ly-node-rce" cx="552.8" cy="335.0" r="21" fill="#f26a1b" stroke="#100d0b" stroke-width="4"/>
+<circle class="ly-ghost" id="ly-node-alcohol" cx="847.2" cy="505.0" r="21" fill="#f26a1b" stroke="#100d0b" stroke-width="4"/>
+<circle id="ly-node-crs" cx="552.8" cy="505.0" r="21" fill="#f26a1b" stroke="#100d0b" stroke-width="4"/>
+<circle class="ly-ghost" id="ly-node-mind" cx="700.0" cy="590.0" r="21" fill="#f26a1b" stroke="#100d0b" stroke-width="4"/>
+<g id="ly-person" transform="translate(700,396)"><circle cx="0" cy="-18" r="19" fill="#100d0b"/><path d="M-36 40 C-36 12 -19 4 0 4 C19 4 36 12 36 40 Z" fill="#100d0b"/><g id="ly-phone" transform="translate(30,2)"><rect x="-15" y="-26" width="30" height="50" rx="5" fill="#100d0b"/><rect x="-12" y="-23" width="24" height="44" rx="3" fill="#f6f0e4"/><use href="#ly-smsBubble" x="-10" y="-19" width="20" height="15"/><rect x="-9" y="1" width="18" height="3" rx="1.5" fill="#b3aa9c"/><rect x="-9" y="8" width="13" height="3" rx="1.5" fill="#b3aa9c"/><circle cx="0" cy="18" r="2.4" fill="#b3aa9c"/><circle id="ly-ping" cx="0" cy="-2" r="22" fill="none" stroke="#f26a1b" stroke-width="3" opacity="0"/></g></g>
+<g id="ly-annotations">
+
+<text x="496" y="432" text-anchor="end" class="ly-olab">PARTNER NODE</text>
+<path class="ly-lead2" d="M504 438 L538 490"/>
+<text x="912" y="426" class="ly-olab">USER THREAD</text>
+<path class="ly-lead2" d="M904 421 L876 414"/>
+
+
+
+
+
+
+<text x="-39.6" y="880" class="ly-fcap">ILLUSTRATIVE &middot; THE SERVICES IN MY OWN JOURNEY &middot; NONE APPROACHED, NONE ONBOARDED &middot; SEE THE FOOT OF THE PAGE</text>
+</g>
+<g id="ly-traffic" class="ly-mv">
+<g id="ly-tick1" transform="translate(530 469)" opacity="0"><circle r="11" fill="#f6f0e4" stroke="#100d0b" stroke-width="2.5"/><path d="M-5 0 L-1.5 4.2 L5.2 -4.4" fill="none" stroke="#100d0b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g id="ly-tick2" transform="translate(524 437)" opacity="0"><circle r="11" fill="#f6f0e4" stroke="#100d0b" stroke-width="2.5"/><path d="M-5 0 L-1.5 4.2 L5.2 -4.4" fill="none" stroke="#100d0b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<use id="ly-msg" href="#ly-smsBubble" x="-14" y="-11" width="28" height="21"/>
+<use id="ly-reply" href="#ly-smsBubble" x="-14" y="-11" width="28" height="21"/>
+</g></g>
+<g id="ly-panel" transform="translate(376.2,0)">
+<text x="60" y="96" class="ly-panel-t">WHAT HAPPENS</text>
+<line x1="60" y1="116" x2="498" y2="116" stroke="#100d0b" stroke-opacity=".15" stroke-width="1"/>
+<g id="ly-step1">
+<circle cx="80" cy="168" r="17" fill="#f26a1b" stroke="#100d0b" stroke-width="2.5"/>
+<text x="80" y="168" text-anchor="middle" dy=".36em" class="ly-snum2">1</text>
+<text x="120" y="157" dy=".36em" class="ly-stxt">Communications</text>
+<text x="120" y="183" dy=".36em" class="ly-stxt">submitted to layer</text>
+</g>
+<g id="ly-ptick1" transform="translate(486 168)"><circle r="12" fill="#f6f0e4" stroke="#100d0b" stroke-width="2.2"/><path d="M-5 0 L-1.5 4.2 L5.2 -4.4" fill="none" stroke="#100d0b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g id="ly-step2">
+<circle cx="80" cy="270" r="17" fill="#f26a1b" stroke="#100d0b" stroke-width="2.5"/>
+<text x="80" y="270" text-anchor="middle" dy=".36em" class="ly-snum2">2</text>
+<text x="120" y="271" dy=".36em" class="ly-stxt">Events logged</text>
+</g>
+<g id="ly-ptick2" transform="translate(486 270)"><circle r="12" fill="#f6f0e4" stroke="#100d0b" stroke-width="2.2"/><path d="M-5 0 L-1.5 4.2 L5.2 -4.4" fill="none" stroke="#100d0b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g id="ly-step3">
+<circle cx="80" cy="372" r="17" fill="#f26a1b" stroke="#100d0b" stroke-width="2.5"/>
+<text x="80" y="372" text-anchor="middle" dy=".36em" class="ly-snum2">3</text>
+<text x="120" y="373" dy=".36em" class="ly-stxt">Thread updated</text>
+</g>
+<g id="ly-ptick3" transform="translate(486 372)"><circle r="12" fill="#f6f0e4" stroke="#100d0b" stroke-width="2.2"/><path d="M-5 0 L-1.5 4.2 L5.2 -4.4" fill="none" stroke="#100d0b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g id="ly-step4">
+<circle cx="80" cy="474" r="17" fill="#f26a1b" stroke="#100d0b" stroke-width="2.5"/>
+<text x="80" y="474" text-anchor="middle" dy=".36em" class="ly-snum2">4</text>
+<text x="120" y="450" dy=".36em" class="ly-stxt">Layer receives and</text>
+<text x="120" y="476" dy=".36em" class="ly-stxt">delivers messages</text>
+<text x="120" y="502" dy=".36em" class="ly-stxt">to user</text>
+</g>
+<g id="ly-ptick4" transform="translate(486 474)"><circle r="12" fill="#f6f0e4" stroke="#100d0b" stroke-width="2.2"/><path d="M-5 0 L-1.5 4.2 L5.2 -4.4" fill="none" stroke="#100d0b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g id="ly-step5">
+<circle cx="80" cy="576" r="17" fill="#f26a1b" stroke="#100d0b" stroke-width="2.5"/>
+<text x="80" y="576" text-anchor="middle" dy=".36em" class="ly-snum2">5</text>
+<text x="120" y="577" dy=".36em" class="ly-stxt">Responses logged</text>
+</g>
+<g id="ly-ptick5" transform="translate(486 576)"><circle r="12" fill="#f6f0e4" stroke="#100d0b" stroke-width="2.2"/><path d="M-5 0 L-1.5 4.2 L5.2 -4.4" fill="none" stroke="#100d0b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g id="ly-step6">
+<circle cx="80" cy="678" r="17" fill="#f26a1b" stroke="#100d0b" stroke-width="2.5"/>
+<text x="80" y="678" text-anchor="middle" dy=".36em" class="ly-snum2">6</text>
+<text x="120" y="666" dy=".36em" class="ly-stxt">Event becomes visible</text>
+<text x="120" y="692" dy=".36em" class="ly-stxt">to Partners</text>
+</g>
+<g id="ly-ptick6" transform="translate(486 678)"><circle r="12" fill="#f6f0e4" stroke="#100d0b" stroke-width="2.2"/><path d="M-5 0 L-1.5 4.2 L5.2 -4.4" fill="none" stroke="#100d0b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
 </svg>
-<svg class="lg-overlay" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-  <g id="lgGlow2" class="lg-mv">
-<circle cx="471" cy="316" r="11" fill="none" stroke="#f6f0e4" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;.95;.95;0;0" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="2.153s" repeatCount="indefinite"/><animate attributeName="r" values="11;16;16;16;16" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="2.153s" repeatCount="indefinite"/></circle>
-<circle cx="471" cy="316" r="11" fill="#f26a1b"><animate attributeName="fill" values="#f26a1b;#f6f0e4;#f6f0e4;#f26a1b;#f26a1b" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="2.153s" repeatCount="indefinite"/></circle>
-<circle cx="729" cy="316" r="11" fill="none" stroke="#f6f0e4" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;.95;.95;0;0" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="6.818s" repeatCount="indefinite"/><animate attributeName="r" values="11;16;16;16;16" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="6.818s" repeatCount="indefinite"/></circle>
-<circle cx="729" cy="316" r="11" fill="#f26a1b"><animate attributeName="fill" values="#f26a1b;#f6f0e4;#f6f0e4;#f26a1b;#f26a1b" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="6.818s" repeatCount="indefinite"/></circle>
-<circle cx="750" cy="390" r="11" fill="none" stroke="#f6f0e4" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;.95;.95;0;0" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="7.987s" repeatCount="indefinite"/><animate attributeName="r" values="11;16;16;16;16" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="7.987s" repeatCount="indefinite"/></circle>
-<circle cx="750" cy="390" r="11" fill="#f26a1b"><animate attributeName="fill" values="#f26a1b;#f6f0e4;#f6f0e4;#f26a1b;#f26a1b" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="7.987s" repeatCount="indefinite"/></circle>
-<circle cx="729" cy="464" r="11" fill="none" stroke="#f6f0e4" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;.95;.95;0;0" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="9.142s" repeatCount="indefinite"/><animate attributeName="r" values="11;16;16;16;16" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="9.142s" repeatCount="indefinite"/></circle>
-<circle cx="729" cy="464" r="11" fill="#f26a1b"><animate attributeName="fill" values="#f26a1b;#f6f0e4;#f6f0e4;#f26a1b;#f26a1b" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="9.142s" repeatCount="indefinite"/></circle>
-<circle cx="471" cy="464" r="11" fill="none" stroke="#f6f0e4" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;.95;.95;0;0" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="13.817s" repeatCount="indefinite"/><animate attributeName="r" values="11;16;16;16;16" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="13.817s" repeatCount="indefinite"/></circle>
-<circle cx="471" cy="464" r="11" fill="#f26a1b"><animate attributeName="fill" values="#f26a1b;#f6f0e4;#f6f0e4;#f26a1b;#f26a1b" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="13.817s" repeatCount="indefinite"/></circle>
-<circle cx="450" cy="390" r="11" fill="none" stroke="#f6f0e4" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;.95;.95;0;0" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="14.986s" repeatCount="indefinite"/><animate attributeName="r" values="11;16;16;16;16" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="14.986s" repeatCount="indefinite"/></circle>
-<circle cx="450" cy="390" r="11" fill="#f26a1b"><animate attributeName="fill" values="#f26a1b;#f6f0e4;#f6f0e4;#f26a1b;#f26a1b" keyTimes="0;.05;.12;.3;1" dur="2.33333s" begin="14.986s" repeatCount="indefinite"/></circle>
-<circle cx="450" cy="390" r="11" fill="none" stroke="#f6f0e4" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;0;.95;.95;0;0;.95;.95;0;0" keyTimes="0;0.2712;0.2879;0.3112;0.3712;0.6154;0.6321;0.6554;0.7154;1" dur="7.0s" repeatCount="indefinite"/><animate attributeName="r" values="11;11;16;16;16;11;16;16;16;16" keyTimes="0;0.2712;0.2879;0.3112;0.3712;0.6154;0.6321;0.6554;0.7154;1" dur="7.0s" repeatCount="indefinite"/></circle>
-<circle cx="450" cy="390" r="11" fill="#f6f0e4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0;1;1;0;0" keyTimes="0;0.2712;0.2879;0.3112;0.3712;0.6154;0.6321;0.6554;0.7154;1" dur="7.0s" repeatCount="indefinite"/></circle>
-</g> <g id="lgTraffic" class="lg-mv">
-    <path id="run-crs" d="M280 390 L450 390 L528 390" fill="none" stroke="none"/>
-    <circle r="5.5" class="lg-dot" stroke="#100d0b" stroke-width="1.2"><animateMotion dur="7.0s" repeatCount="indefinite" keyPoints="0;1;1;0;0" keyTimes="0;.42;.5;.92;1" calcMode="linear"><mpath href="#run-crs"/></animateMotion></circle>
-    <circle r="5" class="lg-dot" stroke="#100d0b" stroke-width="1.2"><animateMotion dur="14.0s" begin="2.270s" repeatCount="indefinite"><mpath href="#thread"/></animateMotion></circle>
-    <circle r="5" class="lg-dot" stroke="#100d0b" stroke-width="1.2"><animateMotion dur="14.0s" begin="4.603s" repeatCount="indefinite"><mpath href="#thread"/></animateMotion></circle>
-    <circle r="5" class="lg-dot" stroke="#100d0b" stroke-width="1.2"><animateMotion dur="14.0s" begin="6.937s" repeatCount="indefinite"><mpath href="#thread"/></animateMotion></circle>
-    <circle r="5" class="lg-dot" stroke="#100d0b" stroke-width="1.2"><animateMotion dur="14.0s" begin="9.270s" repeatCount="indefinite"><mpath href="#thread"/></animateMotion></circle>
-    <circle r="5" class="lg-dot" stroke="#100d0b" stroke-width="1.2"><animateMotion dur="14.0s" begin="11.603s" repeatCount="indefinite"><mpath href="#thread"/></animateMotion></circle>
-    <circle r="5" class="lg-dot" stroke="#100d0b" stroke-width="1.2"><animateMotion dur="14.0s" begin="13.937s" repeatCount="indefinite"><mpath href="#thread"/></animateMotion></circle>
-  </g>
-</svg>
-<figcaption>The six services around one person &mdash; the ones in my own journey, and the ones I would like to see take part &mdash; each through its own login to its own Partner Node on one shared Layer. Every service sees its own agreed view of the one thread. The person is the space in the middle.</figcaption>
 </figure>
 <script>(function(){function fit(){document.querySelectorAll('.layerfig').forEach(function(f){f.style.left='0px';f.style.width='';var w=Math.min(window.innerWidth-108,1164);var sec=f.closest('section'),h=sec&&sec.querySelector('h2');if(h){var x=0,e=h;while(e){x+=e.offsetLeft;e=e.offsetParent;}if(x>0&&x<(window.innerWidth-w)/2)w=window.innerWidth-2*x;}var r=f.getBoundingClientRect();if(w<=r.width+1)return;f.style.width=w+'px';var r2=f.getBoundingClientRect();f.style.left=((window.innerWidth-w)/2-r2.left)+'px';});}
 if(document.readyState!=='loading')fit();else document.addEventListener('DOMContentLoaded',fit);window.addEventListener('load',fit);window.addEventListener('resize',fit);})();</script>
